@@ -5,6 +5,7 @@ import Date from './Date.js'
 function Footer () {
 
   return (
+
     <div className="Footer">
       <div className="Copyright">
         Copyright © 2020 Bookworm Shelter Ltd. 
@@ -16,6 +17,7 @@ function Footer () {
         <Clock hour12 = {false}/>
       </div>
     </div>
+    
   )
 }
 

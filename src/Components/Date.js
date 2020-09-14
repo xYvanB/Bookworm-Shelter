@@ -3,15 +3,17 @@ import { getDay, getMonth, getYear } from 'date-fns';
 
 function Today () {
 
-  let dat = new Date();
-  let d = getDay(dat);
-  let m = getMonth(dat);
-  let y = getYear(dat);
+  let day = new Date();
+  let d = getDay(day);
+  let m = getMonth(day);
+  let y = getYear(day);
 
   return (
+
     <div>
       {d}/{m}/{y}
     </div>
+  
   )
 }
 

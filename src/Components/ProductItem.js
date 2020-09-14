@@ -2,7 +2,9 @@ import React from 'react';
 import { ButtonItem, ButtonLikes } from './Button.js';
 
 function ProductItem (props) {
+
   return (
+
     <div className="main">
       <div className= {props.li.liclassName}>
         <div className='top'>
@@ -17,6 +19,7 @@ function ProductItem (props) {
       </div>
       <img src={props.li.img} alt={props.li.alt}></img>
     </div>
+    
   )
 }
 
