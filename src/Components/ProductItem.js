@@ -9,6 +9,7 @@ function ProductItem (props) {
       <div className= {props.li.liclassName}>
         <div className='top'>
           <span className='title'>{props.li.description}</span>
+          <span className='author'>Autore: {props.li.author}</span>
           <span className='price'>Price: € {props.li.price}</span>
           <span className='isbn'>ISBN: {props.li.isbn}</span>
         </div>

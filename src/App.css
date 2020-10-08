@@ -5,6 +5,7 @@ body {
   background-color: #131418;
   color: white;
   font-family: 'Raleway', sans-serif;
+  height: 100%;
 }
 
 /* Header */
@@ -49,67 +50,48 @@ nav div a:hover {
   background-color: #0084ff;
 }
 
-.searchItem, .aboutItem {
+.searchItem {
   float: right;
+  width: 130px;
 }
 
-.activeItem {
+.activeSearchItem {
   background-color: red;
 }
 
-.activeItem:hover {
-  background-color: blue;
+.activeSearchItem:hover {
+  background-color: #0084ff;
 }
 
 i {
   padding: 0 5px 0 0;
 }
 
-/* Footer */
-.Footer {
-  display: flex;
-  justify-content: space-around;
-  border-top: 1px solid white;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 200;
-  padding: 10px 0;
-}
-
-.Copyright {
-  display: flex;
-  justify-content: left;
-}
-
-.Info {
-  display: flex;
-  justify-content: right;
-  flex-direction: column;
-}
-
 /* Card Style */
 .ProductContainer{
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
   margin: 15px;
+  align-items: stretch;
 }
 
 .Product{
   border-right: 1px solid white;
-  width: 60%;
+  width: 100%;
 }
 
 .main {
   display: flex;
   border: 1px solid white;
-  width: 20%;
-  height: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  flex-basis: 21%;
 }
 
 img {
-  width: 180px;
-  height: 255px ;
+  max-width:40%;
 }
 
 .top {
@@ -122,6 +104,12 @@ img {
   font-size: 20px;
   font-style: italic;
   padding: 10px 5px;
+  text-align: center;
+}
+
+.author {
+  font-size: 16px;
+  font-style: oblique;
   text-align: center;
 }
 
@@ -185,4 +173,50 @@ button {
 
 .textButton {
   text-indent: 3px;
+}
+
+/* Footer */
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 200;
+  padding: 10px;
+}
+
+.Social .Icon {
+  padding: 5px;
+}
+
+.Facebook:hover {
+  color: #3b5998;
+}
+
+.Twitter:hover {
+  color: #00acee;
+}
+
+.Google-Icons:hover .Google, .Google-Icons .Google-Colorized {
+  display: none;
+}
+
+.Google-Icons:hover .Google-Colorized {
+  display: inline;
+}
+
+.Mail:hover {
+  color: #a08e34;
+}
+
+.Copyright {
+  display: flex;
+  justify-content: left;
+}
+
+.Info {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
 }

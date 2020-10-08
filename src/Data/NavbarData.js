@@ -11,9 +11,9 @@ const NavbarData = [
         id:"2",
         liclassName:"stdProducts",
         aclassName:"stdItem",
-        href:"#products",
+        href:"#availableBook",
         icon:"fa fa-fw fa-list",
-        text:"Products",
+        text:"Volumi disponibili",
     },
     {   
         id:"3",
@@ -26,7 +26,7 @@ const NavbarData = [
     {
         id:"4",
         liclassName:"aboutItem",
-        aclassName:"activeItem",
+        aclassName:"stdItem",
         href:"#about",
         icon:"fa fa-fw fa-info-circle",
         text:"About",
@@ -34,7 +34,7 @@ const NavbarData = [
     {
         id:"5",
         liclassName:"searchItem",
-        aclassName:"stdItem",
+        aclassName:"activeSearchItem",
         href:"#search",
         icon:"fa fa-fw fa-search",
         text:"Search",
